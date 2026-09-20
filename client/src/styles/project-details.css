@@ -1,0 +1,384 @@
+.project-details-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.project-details-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.project-details-header {
+  margin-bottom: 24px;
+}
+
+.project-details-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid #d6dce7;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #26334a;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.project-details-back:hover {
+  background: #eef2f7;
+}
+
+.project-overview {
+  padding: 26px;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(20, 30, 50, 0.04);
+}
+
+.project-overview-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.project-overview-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.25;
+}
+
+.project-overview-description {
+  max-width: 800px;
+  margin: 12px 0 0;
+  color: #596579;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.project-details-status,
+.project-task-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border: 1px solid #dce2eb;
+  border-radius: 999px;
+  background: #f7f9fc;
+  color: #536075;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.project-details-status-active,
+.project-task-status-in_progress {
+  background: #edf9f2;
+  border-color: #ccebd8;
+  color: #18794e;
+}
+
+.project-details-status-completed,
+.project-task-status-done {
+  background: #eef4ff;
+  border-color: #d4e1fa;
+  color: #315d9b;
+}
+
+.project-details-status-archived {
+  background: #f3f3f4;
+  border-color: #dedee1;
+  color: #666b75;
+}
+
+.project-task-status-in_review {
+  background: #fff8e8;
+  border-color: #f1dfad;
+  color: #876616;
+}
+
+.project-task-status-todo {
+  background: #f7f9fc;
+  color: #536075;
+}
+
+.project-info-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    minmax(0, 1fr)
+  );
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.project-info-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #e7ebf1;
+  border-radius: 9px;
+  background: #fafbfc;
+}
+
+.project-info-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #7a8495;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.project-info-value {
+  display: block;
+  overflow: hidden;
+  color: #34415a;
+  font-size: 14px;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+}
+
+.project-tasks-section {
+  margin-top: 24px;
+}
+
+.project-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.project-section-heading h2 {
+  margin: 0 0 5px;
+  font-size: 21px;
+}
+
+.project-section-heading p {
+  margin: 0;
+  color: #69758a;
+  font-size: 14px;
+}
+
+.project-task-count {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e9eef8;
+  color: #34415a;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.project-task-list {
+  display: grid;
+  gap: 14px;
+}
+
+.project-task-card {
+  padding: 21px;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(20, 30, 50, 0.04);
+}
+
+.project-task-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.project-task-heading {
+  min-width: 0;
+}
+
+.project-task-heading h3 {
+  margin: 0 0 7px;
+  color: #172033;
+  font-size: 17px;
+}
+
+.project-task-heading p {
+  margin: 0;
+  color: #69758a;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.project-task-meta {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    minmax(0, 1fr)
+  );
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #edf0f4;
+}
+
+.project-task-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.project-task-meta-item span {
+  color: #7a8495;
+  font-size: 12px;
+}
+
+.project-task-meta-item strong {
+  color: #34415a;
+  font-size: 13px;
+}
+
+.priority-low {
+  color: #536075 !important;
+}
+
+.priority-medium {
+  color: #315d9b !important;
+}
+
+.priority-high {
+  color: #9a6a12 !important;
+}
+
+.priority-urgent {
+  color: #a12c2c !important;
+}
+
+.project-no-tasks {
+  padding: 42px 24px;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(20, 30, 50, 0.04);
+}
+
+.project-no-tasks-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: #edf9f2;
+  color: #18794e;
+  font-weight: 700;
+}
+
+.project-no-tasks h3 {
+  margin: 0 0 7px;
+  font-size: 18px;
+}
+
+.project-no-tasks p {
+  margin: 0;
+  color: #69758a;
+  font-size: 14px;
+}
+
+.project-details-error,
+.project-not-found {
+  padding: 24px;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.project-details-error {
+  border-color: #f0b7b7;
+  background: #fff5f5;
+  color: #9f2929;
+}
+
+.project-details-error h1,
+.project-not-found h1 {
+  margin: 0 0 10px;
+  font-size: 23px;
+}
+
+.project-details-error p,
+.project-not-found p {
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+
+.project-details-error .project-details-back,
+.project-not-found .project-details-back {
+  background: #ffffff;
+}
+
+.project-details-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fb;
+  color: #596579;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 900px) {
+  .project-info-grid {
+    grid-template-columns: repeat(
+      2,
+      minmax(0, 1fr)
+    );
+  }
+
+  .project-task-meta {
+    grid-template-columns: repeat(
+      2,
+      minmax(0, 1fr)
+    );
+  }
+}
+
+@media (max-width: 600px) {
+  .project-details-container {
+    width: min(100% - 28px, 1200px);
+    padding: 22px 0 36px;
+  }
+
+  .project-overview {
+    padding: 20px;
+  }
+
+  .project-overview-title {
+    font-size: 25px;
+  }
+
+  .project-info-grid,
+  .project-task-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .project-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-task-top {
+    flex-direction: column;
+  }
+
+  .project-task-card {
+    padding: 18px;
+  }
+}

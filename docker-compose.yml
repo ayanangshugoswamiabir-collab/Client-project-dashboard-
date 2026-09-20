@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: client-dashboard-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dashboard
+      POSTGRES_PASSWORD: dashboard
+      POSTGRES_DB: client_dashboard
+    ports:
+      - "5432:5432"
+    volumes:
+      - dashboard_pgdata:/var/lib/postgresql/data
+
+volumes:
+  dashboard_pgdata:
